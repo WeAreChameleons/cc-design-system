@@ -1,0 +1,88 @@
+/* ============================================
+   CC Design System — Design Tokens
+   Source: Figma CC - Website Design
+   ============================================ */
+
+:root {
+  /* ---- Primary / Neutral ---- */
+  --color-primary-neutral-black: #121212;
+  --color-primary-neutral-white: #ffffff;
+
+  /* ---- Primary / Beige ---- */
+  --color-primary-beige-00: #eae4c8;
+  --color-primary-beige-10: #d3cdb4;
+  --color-primary-beige-20: #bbb6a0;
+  --color-primary-beige-40: #8c8978;
+  --color-primary-beige-60: #757264;
+  --color-primary-beige-70: #2f2e28;
+
+  /* ---- Primary / Orange ---- */
+  --color-primary-orange-00: #eb633f;
+  --color-primary-orange-10: #d45939;
+  --color-primary-orange-20: #bc4f32;
+  --color-primary-orange-40: #8d3b26;
+  --color-primary-orange-60: #5e2819;
+  --color-primary-orange-70: #471e13;
+
+  /* ---- Secondary / Green ---- */
+  --color-secondary-green-00: #e8eb74;
+  --color-secondary-green-10: #c8cb52;
+  --color-secondary-green-20: #a8ab38;
+  --color-secondary-green-40: #7a7c28;
+  --color-secondary-green-60: #4e5018;
+  --color-secondary-green-70: #2f3010;
+
+  /* ---- Secondary / Blue ---- */
+  --color-secondary-blue-00: #88e8f0;
+  --color-secondary-blue-10: #60d8e2;
+  --color-secondary-blue-20: #3cc4ce;
+  --color-secondary-blue-40: #1d2638;
+  --color-secondary-blue-60: #365d60;
+  --color-secondary-blue-70: #2a474a;
+
+  /* ---- Typography ---- */
+  --font-family-base: 'Inter', sans-serif;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ---- Semantic aliases ---- */
+  --color-brand-primary: var(--color-primary-orange-00);
+  --color-text-default: var(--color-primary-neutral-black);
+  --color-text-inverse: var(--color-primary-neutral-white);
+  --color-bg-default: var(--color-primary-neutral-white);
+  --color-bg-subtle: var(--color-primary-beige-00);
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cc-design-system",
+  "version": "0.0.1",
+  "description": "Chameleon Collective Design System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-interactions": "^8.6.18",
+    "@storybook/addon-links": "^8.6.18",
+    "@storybook/blocks": "^8.6.18",
+    "@storybook/react": "^8.6.18",
+    "@storybook/react-vite": "^8.6.18",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "storybook": "^8.6.18",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.4"
+  }
+}
