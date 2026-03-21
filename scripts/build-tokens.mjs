@@ -105,17 +105,56 @@ const tailwindCSS = `/* Auto-generated from figma-tokens.json — do not edit ma
 @theme {
 ${tailwindVars.join("\n")}
 
-  /* CC Brand — Tailwind aliases for cc-website compatibility */
+  /* CC Brand — Core Palette */
   --color-cc-black: var(--color-primary-neutral-black);
   --color-cc-white: var(--color-primary-neutral-white);
   --color-cc-parchment: var(--color-primary-beige-00);
   --color-cc-burnt-sienna: var(--color-primary-orange-00);
   --color-cc-straw: var(--color-secondary-green-00);
   --color-cc-electric-blue: var(--color-secondary-blue-00);
+
+  /* CC Brand — Parchment Tints */
+  --color-cc-parchment-20: var(--color-primary-beige-tint-20);
+  --color-cc-parchment-40: var(--color-primary-beige-tint-40);
+  --color-cc-parchment-60: var(--color-primary-beige-tint-60);
+  --color-cc-parchment-80: var(--color-primary-beige-tint-80);
+
+  /* CC Brand — Burnt Sienna Tints */
+  --color-cc-burnt-sienna-20: var(--color-primary-orange-tint-20);
+  --color-cc-burnt-sienna-40: var(--color-primary-orange-tint-40);
+  --color-cc-burnt-sienna-60: var(--color-primary-orange-tint-60);
+  --color-cc-burnt-sienna-80: var(--color-primary-orange-tint-80);
+
+  /* CC Brand — Straw Tints */
+  --color-cc-straw-20: var(--color-secondary-green-tint-20);
+  --color-cc-straw-40: var(--color-secondary-green-tint-40);
+  --color-cc-straw-60: var(--color-secondary-green-tint-60);
+  --color-cc-straw-80: var(--color-secondary-green-tint-80);
+
+  /* CC Brand — Electric Blue Tints */
+  --color-cc-electric-blue-20: var(--color-secondary-blue-tint-20);
+  --color-cc-electric-blue-40: var(--color-secondary-blue-tint-40);
+  --color-cc-electric-blue-60: var(--color-secondary-blue-tint-60);
+  --color-cc-electric-blue-80: var(--color-secondary-blue-tint-80);
+
+  /* CC Brand — Grey */
+  --color-cc-grey: var(--color-primary-grey-mid);
+  --color-cc-grey-light: var(--color-primary-grey-light);
+
+  /* CC Brand — Aliases */
   --color-cc-cream: var(--color-primary-beige-00);
   --color-cc-rust: var(--color-primary-orange-10);
-  --color-cc-orange: var(--color-primary-orange-00);
   --color-cc-offwhite: #f8f7f3;
+  --color-cc-orange: var(--color-primary-orange-00);
+
+  /* CC Admin — Semantic Tokens */
+  --color-cc-text-primary: #121212;
+  --color-cc-text-secondary: #6b6b6b;
+  --color-cc-text-muted: #9a9a9a;
+  --color-cc-border: #e5e5e5;
+  --color-cc-border-light: #f0f0f0;
+  --color-cc-surface: #ffffff;
+  --color-cc-surface-hover: #faf8f2;
 
   /* Fonts */
   --font-display: var(--font-family-display);
