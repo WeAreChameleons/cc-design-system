@@ -83,6 +83,11 @@
   --cc-font-body:    'Inter', sans-serif;
   --cc-font-mono:    'IBM Plex Mono', monospace;
 
+  /* Aliases used by website components */
+  --font-family-display: 'IBM Plex Sans', sans-serif;
+  --font-family-body:    'Inter', sans-serif;
+  --font-family-mono:    'IBM Plex Mono', monospace;
+
   /* ---- Typography: Font Weights ---- */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
