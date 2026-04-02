@@ -1,0 +1,8 @@
+{
+  "storage": {
+    "provider": "github",
+    "repositoryId": "WeAreChameleons/cc-design-system",
+    "branch": "main",
+    "filePath": "tokens/figma-tokens.json"
+  }
+}

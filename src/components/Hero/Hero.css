@@ -1,0 +1,77 @@
+.cc-hero {
+  padding: 128px 0 96px;
+  overflow: hidden;
+}
+
+.cc-hero__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Background variants */
+.cc-hero--bg-burnt-sienna { background-color: var(--color-primary-orange-00); }
+.cc-hero--bg-cream { background-color: var(--color-primary-beige-00); }
+.cc-hero--bg-black { background-color: var(--color-primary-neutral-black); }
+.cc-hero--bg-white { background-color: var(--color-primary-neutral-white); }
+
+/* Text colors based on background */
+.cc-hero--bg-burnt-sienna .cc-hero__eyebrow { color: rgba(255, 255, 255, 0.5); }
+.cc-hero--bg-burnt-sienna .cc-hero__title { color: var(--color-primary-neutral-white); }
+.cc-hero--bg-burnt-sienna .cc-hero__subtitle { color: rgba(255, 255, 255, 0.8); }
+
+.cc-hero--bg-cream .cc-hero__eyebrow { color: rgba(18, 18, 18, 0.4); }
+.cc-hero--bg-cream .cc-hero__title { color: var(--color-primary-neutral-black); }
+.cc-hero--bg-cream .cc-hero__subtitle { color: rgba(18, 18, 18, 0.75); }
+
+.cc-hero--bg-black .cc-hero__eyebrow { color: rgba(255, 255, 255, 0.4); }
+.cc-hero--bg-black .cc-hero__title { color: var(--color-primary-neutral-white); }
+.cc-hero--bg-black .cc-hero__subtitle { color: rgba(255, 255, 255, 0.75); }
+
+.cc-hero--bg-white .cc-hero__eyebrow { color: rgba(18, 18, 18, 0.4); }
+.cc-hero--bg-white .cc-hero__title { color: var(--color-primary-neutral-black); }
+.cc-hero--bg-white .cc-hero__subtitle { color: rgba(18, 18, 18, 0.75); }
+
+/* Alignment */
+.cc-hero--center .cc-hero__inner { text-align: center; }
+.cc-hero--center .cc-hero__actions { justify-content: center; }
+.cc-hero--center .cc-hero__subtitle { margin-left: auto; margin-right: auto; }
+
+/* Eyebrow */
+.cc-hero__eyebrow {
+  font-family: var(--font-family-display);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+/* Title — massive display type */
+.cc-hero__title {
+  font-family: var(--font-family-display);
+  font-weight: 400;
+  font-size: clamp(72px, 11vw, 180px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Subtitle */
+.cc-hero__subtitle {
+  font-family: var(--font-family-display);
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 400;
+  line-height: 1.3;
+  max-width: 720px;
+  margin-top: 48px;
+}
+
+/* Actions */
+.cc-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+  align-items: flex-start;
+}

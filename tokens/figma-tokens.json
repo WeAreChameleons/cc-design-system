@@ -1,0 +1,130 @@
+{
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": ["core"]
+  },
+  "core": {
+    "color": {
+      "primary": {
+        "neutral": {
+          "black": { "$value": "#121212", "$type": "color" },
+          "white": { "$value": "#ffffff", "$type": "color" }
+        },
+        "grey": {
+          "mid": { "$value": "#6b6b6b", "$type": "color" },
+          "light": { "$value": "#9a9a9a", "$type": "color" }
+        },
+        "beige": {
+          "00": { "$value": "#eae4c8", "$type": "color" },
+          "10": { "$value": "#d3cdb4", "$type": "color" },
+          "20": { "$value": "#bbb6a0", "$type": "color" },
+          "40": { "$value": "#8c8978", "$type": "color" },
+          "60": { "$value": "#757264", "$type": "color" },
+          "70": { "$value": "#2f2e28", "$type": "color" }
+        },
+        "beige-tint": {
+          "20": { "$value": "#faf8f2", "$type": "color" },
+          "40": { "$value": "#f5f1e5", "$type": "color" },
+          "60": { "$value": "#f0ead8", "$type": "color" },
+          "80": { "$value": "#eae4c8", "$type": "color" }
+        },
+        "orange": {
+          "00": { "$value": "#eb633f", "$type": "color" },
+          "10": { "$value": "#d45939", "$type": "color" },
+          "20": { "$value": "#bc4f32", "$type": "color" },
+          "40": { "$value": "#8d3b26", "$type": "color" },
+          "60": { "$value": "#5e2819", "$type": "color" },
+          "70": { "$value": "#471e13", "$type": "color" }
+        },
+        "orange-tint": {
+          "20": { "$value": "#fdf0ec", "$type": "color" },
+          "40": { "$value": "#f9d0c5", "$type": "color" },
+          "60": { "$value": "#f4a88e", "$type": "color" },
+          "80": { "$value": "#ef7a5a", "$type": "color" }
+        }
+      },
+      "secondary": {
+        "green": {
+          "00": { "$value": "#e8eb74", "$type": "color" },
+          "10": { "$value": "#c8cb52", "$type": "color" },
+          "20": { "$value": "#a8ab38", "$type": "color" },
+          "40": { "$value": "#7a7c28", "$type": "color" },
+          "60": { "$value": "#4e5018", "$type": "color" },
+          "70": { "$value": "#2f3010", "$type": "color" }
+        },
+        "green-tint": {
+          "20": { "$value": "#fdfee8", "$type": "color" },
+          "40": { "$value": "#f8fac0", "$type": "color" },
+          "60": { "$value": "#f1f498", "$type": "color" },
+          "80": { "$value": "#ecef7e", "$type": "color" }
+        },
+        "blue": {
+          "00": { "$value": "#88e8f0", "$type": "color" },
+          "10": { "$value": "#60d8e2", "$type": "color" },
+          "20": { "$value": "#3cc4ce", "$type": "color" },
+          "40": { "$value": "#1d2638", "$type": "color" },
+          "60": { "$value": "#365d60", "$type": "color" },
+          "70": { "$value": "#2a474a", "$type": "color" }
+        },
+        "blue-tint": {
+          "20": { "$value": "#eafcfe", "$type": "color" },
+          "40": { "$value": "#c7f5fa", "$type": "color" },
+          "60": { "$value": "#a3eef6", "$type": "color" },
+          "80": { "$value": "#9dedf4", "$type": "color" }
+        }
+      },
+      "semantic": {
+        "brand-primary": { "$value": "{color.primary.orange.00}", "$type": "color" },
+        "text-default": { "$value": "{color.primary.neutral.black}", "$type": "color" },
+        "text-inverse": { "$value": "{color.primary.neutral.white}", "$type": "color" },
+        "bg-default": { "$value": "{color.primary.neutral.white}", "$type": "color" },
+        "bg-subtle": { "$value": "{color.primary.beige.00}", "$type": "color" }
+      }
+    },
+    "font": {
+      "family": {
+        "display": { "$value": "'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif", "$type": "fontFamily" },
+        "body": { "$value": "'Inter', ui-sans-serif, system-ui, sans-serif", "$type": "fontFamily" }
+      },
+      "size": {
+        "xs": { "$value": "12", "$type": "fontSize" },
+        "sm": { "$value": "14", "$type": "fontSize" },
+        "base": { "$value": "16", "$type": "fontSize" },
+        "lg": { "$value": "18", "$type": "fontSize" },
+        "xl": { "$value": "20", "$type": "fontSize" },
+        "2xl": { "$value": "24", "$type": "fontSize" },
+        "3xl": { "$value": "30", "$type": "fontSize" },
+        "4xl": { "$value": "36", "$type": "fontSize" }
+      },
+      "weight": {
+        "regular": { "$value": "400", "$type": "fontWeight" },
+        "medium": { "$value": "500", "$type": "fontWeight" },
+        "semibold": { "$value": "600", "$type": "fontWeight" },
+        "bold": { "$value": "700", "$type": "fontWeight" }
+      },
+      "lineHeight": {
+        "tight": { "$value": "1.2", "$type": "lineHeight" },
+        "normal": { "$value": "1.4", "$type": "lineHeight" },
+        "relaxed": { "$value": "1.6", "$type": "lineHeight" }
+      }
+    },
+    "space": {
+      "1": { "$value": "4", "$type": "spacing" },
+      "2": { "$value": "8", "$type": "spacing" },
+      "3": { "$value": "12", "$type": "spacing" },
+      "4": { "$value": "16", "$type": "spacing" },
+      "5": { "$value": "20", "$type": "spacing" },
+      "6": { "$value": "24", "$type": "spacing" },
+      "8": { "$value": "32", "$type": "spacing" },
+      "10": { "$value": "40", "$type": "spacing" },
+      "12": { "$value": "48", "$type": "spacing" },
+      "16": { "$value": "64", "$type": "spacing" }
+    },
+    "radius": {
+      "sm": { "$value": "4", "$type": "borderRadius" },
+      "md": { "$value": "8", "$type": "borderRadius" },
+      "lg": { "$value": "12", "$type": "borderRadius" },
+      "full": { "$value": "9999", "$type": "borderRadius" }
+    }
+  }
+}

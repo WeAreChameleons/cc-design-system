@@ -1,0 +1,140 @@
+/* Auto-generated from figma-tokens.json — do not edit manually */
+/* Copy this @theme block into your Tailwind globals.css */
+
+@theme {
+  --color-primary-neutral-black: #121212;
+  --color-primary-neutral-white: #ffffff;
+  --color-primary-grey-mid: #6b6b6b;
+  --color-primary-grey-light: #9a9a9a;
+  --color-primary-beige-10: #d3cdb4;
+  --color-primary-beige-20: #bbb6a0;
+  --color-primary-beige-40: #8c8978;
+  --color-primary-beige-60: #757264;
+  --color-primary-beige-70: #2f2e28;
+  --color-primary-beige-00: #eae4c8;
+  --color-primary-beige-tint-20: #faf8f2;
+  --color-primary-beige-tint-40: #f5f1e5;
+  --color-primary-beige-tint-60: #f0ead8;
+  --color-primary-beige-tint-80: #eae4c8;
+  --color-primary-orange-10: #d45939;
+  --color-primary-orange-20: #bc4f32;
+  --color-primary-orange-40: #8d3b26;
+  --color-primary-orange-60: #5e2819;
+  --color-primary-orange-70: #471e13;
+  --color-primary-orange-00: #eb633f;
+  --color-primary-orange-tint-20: #fdf0ec;
+  --color-primary-orange-tint-40: #f9d0c5;
+  --color-primary-orange-tint-60: #f4a88e;
+  --color-primary-orange-tint-80: #ef7a5a;
+  --color-secondary-green-10: #c8cb52;
+  --color-secondary-green-20: #a8ab38;
+  --color-secondary-green-40: #7a7c28;
+  --color-secondary-green-60: #4e5018;
+  --color-secondary-green-70: #2f3010;
+  --color-secondary-green-00: #e8eb74;
+  --color-secondary-green-tint-20: #fdfee8;
+  --color-secondary-green-tint-40: #f8fac0;
+  --color-secondary-green-tint-60: #f1f498;
+  --color-secondary-green-tint-80: #ecef7e;
+  --color-secondary-blue-10: #60d8e2;
+  --color-secondary-blue-20: #3cc4ce;
+  --color-secondary-blue-40: #1d2638;
+  --color-secondary-blue-60: #365d60;
+  --color-secondary-blue-70: #2a474a;
+  --color-secondary-blue-00: #88e8f0;
+  --color-secondary-blue-tint-20: #eafcfe;
+  --color-secondary-blue-tint-40: #c7f5fa;
+  --color-secondary-blue-tint-60: #a3eef6;
+  --color-secondary-blue-tint-80: #9dedf4;
+  --font-family-display: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-size-xs: 12;
+  --font-size-sm: 14;
+  --font-size-base: 16;
+  --font-size-lg: 18;
+  --font-size-xl: 20;
+  --font-size-2xl: 24;
+  --font-size-3xl: 30;
+  --font-size-4xl: 36;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-line-height-tight: 1.2;
+  --font-line-height-normal: 1.4;
+  --font-line-height-relaxed: 1.6;
+  --space-1: 4;
+  --space-2: 8;
+  --space-3: 12;
+  --space-4: 16;
+  --space-5: 20;
+  --space-6: 24;
+  --space-8: 32;
+  --space-10: 40;
+  --space-12: 48;
+  --space-16: 64;
+  --radius-sm: 4;
+  --radius-md: 8;
+  --radius-lg: 12;
+  --radius-full: 9999;
+  --color-semantic-brand-primary: var(--color-primary-orange-00);
+  --color-semantic-text-default: var(--color-primary-neutral-black);
+  --color-semantic-text-inverse: var(--color-primary-neutral-white);
+  --color-semantic-bg-default: var(--color-primary-neutral-white);
+  --color-semantic-bg-subtle: var(--color-primary-beige-00);
+
+  /* CC Brand — Core Palette */
+  --color-cc-black: var(--color-primary-neutral-black);
+  --color-cc-white: var(--color-primary-neutral-white);
+  --color-cc-parchment: var(--color-primary-beige-00);
+  --color-cc-burnt-sienna: var(--color-primary-orange-00);
+  --color-cc-straw: var(--color-secondary-green-00);
+  --color-cc-electric-blue: var(--color-secondary-blue-00);
+
+  /* CC Brand — Parchment Tints */
+  --color-cc-parchment-20: var(--color-primary-beige-tint-20);
+  --color-cc-parchment-40: var(--color-primary-beige-tint-40);
+  --color-cc-parchment-60: var(--color-primary-beige-tint-60);
+  --color-cc-parchment-80: var(--color-primary-beige-tint-80);
+
+  /* CC Brand — Burnt Sienna Tints */
+  --color-cc-burnt-sienna-20: var(--color-primary-orange-tint-20);
+  --color-cc-burnt-sienna-40: var(--color-primary-orange-tint-40);
+  --color-cc-burnt-sienna-60: var(--color-primary-orange-tint-60);
+  --color-cc-burnt-sienna-80: var(--color-primary-orange-tint-80);
+
+  /* CC Brand — Straw Tints */
+  --color-cc-straw-20: var(--color-secondary-green-tint-20);
+  --color-cc-straw-40: var(--color-secondary-green-tint-40);
+  --color-cc-straw-60: var(--color-secondary-green-tint-60);
+  --color-cc-straw-80: var(--color-secondary-green-tint-80);
+
+  /* CC Brand — Electric Blue Tints */
+  --color-cc-electric-blue-20: var(--color-secondary-blue-tint-20);
+  --color-cc-electric-blue-40: var(--color-secondary-blue-tint-40);
+  --color-cc-electric-blue-60: var(--color-secondary-blue-tint-60);
+  --color-cc-electric-blue-80: var(--color-secondary-blue-tint-80);
+
+  /* CC Brand — Grey */
+  --color-cc-grey: var(--color-primary-grey-mid);
+  --color-cc-grey-light: var(--color-primary-grey-light);
+
+  /* CC Brand — Aliases */
+  --color-cc-cream: var(--color-primary-beige-00);
+  --color-cc-rust: var(--color-primary-orange-10);
+  --color-cc-offwhite: #f8f7f3;
+  --color-cc-orange: var(--color-primary-orange-00);
+
+  /* CC Admin — Semantic Tokens */
+  --color-cc-text-primary: #121212;
+  --color-cc-text-secondary: #6b6b6b;
+  --color-cc-text-muted: #9a9a9a;
+  --color-cc-border: #e5e5e5;
+  --color-cc-border-light: #f0f0f0;
+  --color-cc-surface: #ffffff;
+  --color-cc-surface-hover: #faf8f2;
+
+  /* Fonts */
+  --font-display: var(--font-family-display);
+  --font-sans: var(--font-family-body);
+}
