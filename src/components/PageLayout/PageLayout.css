@@ -1,0 +1,27 @@
+.cc-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--cc-page-bg, #F5F3EC);
+}
+
+.cc-layout__main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-layout__content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cc-layout__fabs {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}

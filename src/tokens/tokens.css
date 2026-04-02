@@ -32,7 +32,7 @@
   --color-secondary-green-60: #4e5018;
   --color-secondary-green-70: #2f3010;
 
-  /* ---- Secondary / Blue ---- */
+  /* ---- Secondary / Blue (Teal) ---- */
   --color-secondary-blue-00: #88e8f0;
   --color-secondary-blue-10: #60d8e2;
   --color-secondary-blue-20: #3cc4ce;
@@ -40,26 +40,134 @@
   --color-secondary-blue-60: #365d60;
   --color-secondary-blue-70: #2a474a;
 
-  /* ---- Typography ---- */
-  --font-family-base: 'Inter', sans-serif;
+  /* ---- CC Palette aliases (short form) ---- */
+  --cc-black:        #121212;
+  --cc-dark:         #282828;
+  --cc-white:        #FFFFFF;
 
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */
-  --font-size-2xl: 1.5rem;    /* 24px */
-  --font-size-3xl: 1.875rem;  /* 30px */
-  --font-size-4xl: 2.25rem;   /* 36px */
+  /* Primary Beige */
+  --cc-beige-00:     #EAE4C8;
+  --cc-beige-10:     #D3CDB4;
+  --cc-beige-20:     #BBB6A0;
+  --cc-beige-40:     #8C8978;
+  --cc-beige-60:     #757264;
+  --cc-beige-70:     #2F2E28;
 
+  /* Primary Orange */
+  --cc-orange-00:    #EB633F;
+  --cc-orange-10:    #D45939;
+  --cc-orange-20:    #BC4F32;
+  --cc-orange-40:    #8D3B26;
+  --cc-orange-60:    #5E2819;
+  --cc-orange-70:    #471E13;
+
+  /* Secondary Green */
+  --cc-green-00:     #E8EB74;
+  --cc-green-40:     #7A8A2A;
+  --cc-green-70:     #2E2F17;
+
+  /* Secondary Teal */
+  --cc-teal-00:      #5DEFF0;
+  --cc-teal-60:      #365D60;
+  --cc-teal-70:      #2A474A;
+
+  /* Page */
+  --cc-page-bg:      #F5F3EC;
+
+  /* ---- Typography: Font Families ---- */
+  --font-display: 'IBM Plex Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --cc-font-display: 'IBM Plex Sans', sans-serif;
+  --cc-font-body:    'Inter', sans-serif;
+  --cc-font-mono:    'IBM Plex Mono', monospace;
+
+  /* ---- Typography: Font Weights ---- */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  --font-weight-bold: 700;
 
-  --line-height-tight: 1.2;
-  --line-height-normal: 1.4;
-  --line-height-relaxed: 1.6;
+  /* ---- Typography: Special / Display styles ---- */
+  --text-display-font: var(--font-display);
+  --text-display-size: 15rem;
+  --text-display-weight: var(--font-weight-regular);
+  --text-display-line-height: 14.25rem;
+  --text-display-letter-spacing: 0;
+
+  --text-section-font: var(--font-display);
+  --text-section-size: 9.375rem;
+  --text-section-weight: var(--font-weight-regular);
+  --text-section-line-height: 5.5rem;
+  --text-section-letter-spacing: 0;
+
+  /* ---- Typography: Headings (IBM Plex Sans) ---- */
+  --text-h1-font: var(--font-display);
+  --text-h1-size: 3.5625rem;
+  --text-h1-weight: var(--font-weight-regular);
+  --text-h1-line-height: 1.1;
+  --text-h1-letter-spacing: -0.01em;
+
+  --text-h2-font: var(--font-display);
+  --text-h2-size: 3.125rem;
+  --text-h2-weight: var(--font-weight-regular);
+  --text-h2-line-height: 1.1;
+  --text-h2-letter-spacing: 0;
+
+  --text-h3-font: var(--font-display);
+  --text-h3-size: 2.9375rem;
+  --text-h3-weight: var(--font-weight-medium);
+  --text-h3-line-height: 3.125rem;
+  --text-h3-letter-spacing: 0;
+
+  --text-h4-font: var(--font-display);
+  --text-h4-size: 2.5rem;
+  --text-h4-weight: var(--font-weight-medium);
+  --text-h4-line-height: 1.3;
+  --text-h4-letter-spacing: 0;
+
+  --text-h5-font: var(--font-display);
+  --text-h5-size: 2rem;
+  --text-h5-weight: var(--font-weight-medium);
+  --text-h5-line-height: 1.2;
+  --text-h5-letter-spacing: 0;
+
+  /* ---- Typography: Body ---- */
+  --text-hero-body-font: var(--font-display);
+  --text-hero-body-size: 2rem;
+  --text-hero-body-weight: var(--font-weight-regular);
+  --text-hero-body-line-height: 1.6;
+  --text-hero-body-letter-spacing: -0.01em;
+
+  --text-body1-font: var(--font-body);
+  --text-body1-size: 1.375rem;
+  --text-body1-weight: var(--font-weight-regular);
+  --text-body1-line-height: 1.6;
+  --text-body1-letter-spacing: 0;
+
+  --text-body2-font: var(--font-body);
+  --text-body2-size: 1.125rem;
+  --text-body2-weight: var(--font-weight-regular);
+  --text-body2-line-height: 1.6;
+  --text-body2-letter-spacing: 0;
+
+  --text-cta1-font: var(--font-display);
+  --text-cta1-size: 0.875rem;
+  --text-cta1-weight: var(--font-weight-semibold);
+  --text-cta1-line-height: 1.5;
+  --text-cta1-letter-spacing: 0;
+
+  --text-small-copy-font: var(--font-body);
+  --text-small-copy-size: 1rem;
+  --text-small-copy-weight: var(--font-weight-regular);
+  --text-small-copy-line-height: 1.6;
+  --text-small-copy-letter-spacing: 0;
+
+  --text-label-form-font: var(--font-body);
+  --text-label-form-size: 1.25rem;
+  --text-label-form-weight: var(--font-weight-regular);
+  --text-label-form-line-height: 2.0625rem;
+  --text-label-form-letter-spacing: 0;
 
   /* ---- Spacing ---- */
   --space-1: 0.25rem;
@@ -79,10 +187,120 @@
   --radius-lg: 12px;
   --radius-full: 9999px;
 
-  /* ---- Semantic aliases ---- */
-  --color-brand-primary: var(--color-primary-orange-00);
+  /* ── Semantic tokens ─────────────────────────────────────────────────────── */
+
+  /* Brand / primary */
+  --color-brand-primary:          var(--cc-orange-00);
+  --color-brand-primary-hover:    var(--cc-orange-10);
+  --color-brand-primary-active:   var(--cc-orange-20);
+  --color-brand-primary-light:    color-mix(in srgb, var(--cc-orange-00) 13%, white);
+  --color-brand-primary-text:     var(--cc-orange-40);
+
+  /* Legacy semantic aliases */
   --color-text-default: var(--color-primary-neutral-black);
   --color-text-inverse: var(--color-primary-neutral-white);
   --color-bg-default: var(--color-primary-neutral-white);
   --color-bg-subtle: var(--color-primary-beige-00);
+
+  /* Sidebar */
+  --sidebar-bg:                   var(--cc-beige-70);
+  --sidebar-logo-bg:              var(--cc-orange-00);
+  --sidebar-logo-text:            var(--cc-beige-00);
+  --sidebar-section-label:        var(--cc-beige-40);
+  --sidebar-group-label:          var(--cc-beige-60);
+  --sidebar-item-text:            var(--cc-beige-10);
+  --sidebar-active-bg:            color-mix(in srgb, var(--cc-orange-40) 20%, transparent);
+  --sidebar-active-text:          var(--cc-orange-00);
+  --sidebar-active-border:        var(--cc-orange-00);
+
+  /* Buttons */
+  --btn-primary-bg:               var(--cc-orange-00);
+  --btn-primary-hover:            var(--cc-orange-10);
+  --btn-primary-active:           var(--cc-orange-20);
+  --btn-primary-txt:              var(--cc-white);
+  --btn-secondary-bg:             var(--cc-white);
+  --btn-secondary-hover:          var(--cc-beige-00);
+  --btn-secondary-border:         var(--cc-beige-20);
+  --btn-secondary-txt:            var(--cc-dark);
+  --btn-ghost-txt:                var(--cc-beige-60);
+  --btn-radius:                   8px;
+  --btn-font:                     var(--cc-font-display);
+  --btn-font-weight:              600;
+  --btn-height-sm:                30px;
+  --btn-height-md:                36px;
+  --btn-height-lg:                42px;
+
+  /* Tab bar */
+  --tab-track-border:             var(--cc-beige-10);
+  --tab-active-txt:               var(--cc-orange-00);
+  --tab-active-border:            var(--cc-orange-00);
+  --tab-active-weight:            600;
+  --tab-inactive-txt:             var(--cc-beige-40);
+  --tab-inactive-hover:           var(--cc-beige-60);
+  --tab-font:                     var(--cc-font-display);
+  --tab-font-size:                13px;
+
+  /* Page header */
+  --hdr-title-font:               var(--cc-font-display);
+  --hdr-title-size:               24px;
+  --hdr-title-weight:             500;
+  --hdr-title-color:              var(--cc-dark);
+  --hdr-sub-font:                 var(--cc-font-body);
+  --hdr-sub-size:                 13px;
+  --hdr-sub-color:                var(--cc-beige-60);
+
+  /* KPI cards */
+  --kpi-card-bg:                  var(--cc-white);
+  --kpi-card-border:              var(--cc-beige-10);
+  --kpi-label-color:              var(--cc-beige-40);
+  --kpi-value-font:               var(--cc-font-display);
+  --kpi-value-size:               28px;
+  --kpi-value-weight:             500;
+  --kpi-value-neutral:            var(--cc-dark);
+  --kpi-value-orange:             var(--cc-orange-00);
+  --kpi-value-teal:               var(--cc-teal-60);
+  --kpi-value-green:              var(--cc-green-40);
+  --kpi-alert-bg:                 color-mix(in srgb, var(--cc-orange-00) 8%, white);
+  --kpi-alert-border:             color-mix(in srgb, var(--cc-orange-00) 27%, transparent);
+  --kpi-alert-txt:                var(--cc-orange-10);
+
+  /* Badges */
+  --badge-font:                   var(--cc-font-display);
+  --badge-font-size:              13px;
+  --badge-font-weight:            600;
+
+  /* Table */
+  --table-header-bg:              var(--cc-beige-00);
+  --table-header-text:            var(--cc-beige-70);
+  --table-header-border:          var(--cc-beige-10);
+  --table-row-alt:                color-mix(in srgb, var(--cc-beige-00) 40%, transparent);
+  --table-sort-active:            var(--cc-orange-00);
+  --table-link:                   var(--cc-orange-10);
+  --table-action-bg:              var(--cc-orange-00);
+
+  /* Search + filters */
+  --search-input-border:          var(--cc-beige-10);
+  --search-input-border-focus:    var(--cc-beige-40);
+  --search-input-placeholder:     var(--cc-beige-40);
+  --filter-drop-border:           var(--cc-beige-10);
+  --filter-active-border:         color-mix(in srgb, var(--cc-orange-00) 40%, transparent);
+  --filter-active-bg:             color-mix(in srgb, var(--cc-orange-00) 5%, white);
+  --filter-active-txt:            var(--cc-orange-40);
+
+  /* Segmented pills */
+  --pill-track-bg:                var(--cc-beige-00);
+  --pill-track-border:            var(--cc-beige-10);
+  --pill-active-bg:               var(--cc-beige-70);
+  --pill-active-txt:              var(--cc-beige-00);
+  --pill-inactive-txt:            var(--cc-beige-40);
+
+  /* FABs */
+  --fab-phone-bg:                 var(--cc-teal-60);
+  --fab-phone-hover:              var(--cc-teal-70);
+  --fab-chat-bg:                  var(--cc-orange-00);
+  --fab-chat-hover:               var(--cc-orange-10);
+  --fab-badge-bg:                 var(--cc-green-00);
+  --fab-badge-txt:                var(--cc-green-70);
+  --fab-size:                     44px;
+  --fab-radius:                   10px;
 }

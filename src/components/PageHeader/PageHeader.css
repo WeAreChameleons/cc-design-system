@@ -1,0 +1,112 @@
+.cc-page-header {
+  background: var(--cc-page-bg, #F5F3EC);
+}
+
+.cc-page-header__banner {
+  background: color-mix(in srgb, var(--cc-orange-00, #EB633F) 10%, white);
+  border-bottom: 1px solid color-mix(in srgb, var(--cc-orange-00, #EB633F) 20%, transparent);
+  padding: 8px 24px;
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: var(--cc-orange-40, #8D3B26);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cc-page-header__banner-link {
+  color: var(--cc-orange-00, #EB633F);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cc-page-header__banner-link:hover { text-decoration: underline; }
+
+.cc-page-header__inner {
+  padding: 24px 24px 0;
+}
+
+.cc-page-header__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 12px;
+  color: var(--cc-beige-40, #8C8978);
+}
+
+.cc-page-header__crumb-sep {
+  color: var(--cc-beige-20, #BBB6A0);
+  padding: 0 4px;
+}
+
+.cc-page-header__crumb-link {
+  color: var(--cc-beige-60, #757264);
+  text-decoration: none;
+}
+.cc-page-header__crumb-link:hover { color: var(--cc-dark, #282828); }
+
+.cc-page-header__crumb-current {
+  color: var(--cc-dark, #282828);
+  font-weight: 500;
+}
+
+.cc-page-header__eyebrow {
+  display: block;
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cc-orange-00, #EB633F);
+  margin-bottom: 6px;
+}
+
+.cc-page-header__welcome {
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: var(--cc-beige-60, #757264);
+  margin: 0 0 4px;
+}
+
+.cc-page-header__title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cc-page-header__title {
+  font-family: var(--hdr-title-font, 'IBM Plex Sans', sans-serif);
+  font-size: var(--hdr-title-size, 24px);
+  font-weight: var(--hdr-title-weight, 500);
+  color: var(--hdr-title-color, #282828);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cc-page-header__subtitle {
+  font-family: var(--hdr-sub-font, 'Inter', sans-serif);
+  font-size: var(--hdr-sub-size, 13px);
+  color: var(--hdr-sub-color, #757264);
+  margin: 4px 0 0;
+}
+
+.cc-page-header__section-subtitle {
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 12px;
+  color: var(--cc-beige-40, #8C8978);
+  margin: 2px 0 0;
+}
+
+.cc-page-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.cc-page-header__tabs {
+  margin-top: 16px;
+}

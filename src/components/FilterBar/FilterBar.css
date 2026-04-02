@@ -1,0 +1,10 @@
+.cc-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cc-filter-bar__cta {
+  margin-left: auto;
+}

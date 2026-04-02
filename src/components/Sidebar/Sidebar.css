@@ -1,0 +1,190 @@
+.cc-sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar-bg, #2F2E28);
+  width: 220px;
+  height: 100%;
+  min-height: 100vh;
+  transition: width 0.2s ease;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cc-sidebar--collapsed {
+  width: 56px;
+}
+
+/* ── Logo ── */
+.cc-sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 56px;
+  border-bottom: 1px solid color-mix(in srgb, var(--cc-beige-70, #2F2E28) 0%, var(--cc-beige-60, #757264) 20%);
+  flex-shrink: 0;
+}
+
+.cc-sidebar__logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--sidebar-logo-bg, #EB633F);
+  color: var(--sidebar-logo-text, #EAE4C8);
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  flex-shrink: 0;
+  letter-spacing: -0.5px;
+}
+
+.cc-sidebar__logo-wordmark {
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cc-beige-00, #EAE4C8);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cc-sidebar__toggle {
+  background: none;
+  border: none;
+  color: var(--sidebar-group-label, #757264);
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.cc-sidebar__toggle:hover {
+  color: var(--cc-beige-10, #D3CDB4);
+}
+
+/* ── Nav ── */
+.cc-sidebar__nav {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.cc-sidebar__group {
+  margin-bottom: 4px;
+}
+
+.cc-sidebar__group-label {
+  display: block;
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sidebar-section-label, #8C8978);
+  padding: 12px 16px 4px;
+  white-space: nowrap;
+}
+
+.cc-sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  color: var(--sidebar-item-text, #D3CDB4);
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 13px;
+  font-weight: 400;
+  transition: background 0.15s, color 0.15s;
+  border-radius: 0 6px 6px 0;
+  white-space: nowrap;
+}
+
+.cc-sidebar__item:hover {
+  background: color-mix(in srgb, var(--cc-beige-40, #8C8978) 10%, transparent);
+  color: var(--cc-beige-00, #EAE4C8);
+}
+
+.cc-sidebar__item--active {
+  background: var(--sidebar-active-bg, color-mix(in srgb, #8D3B26 20%, transparent));
+  color: var(--sidebar-active-text, #EB633F);
+  border-left-color: var(--sidebar-active-border, #EB633F);
+  font-weight: 600;
+}
+
+.cc-sidebar__item-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.cc-sidebar__item-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Footer ── */
+.cc-sidebar__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--cc-beige-60, #757264) 30%, transparent);
+  flex-shrink: 0;
+}
+
+.cc-sidebar__avatar {
+  width: 32px;
+  height: 32px;
+  background: var(--cc-orange-00, #EB633F);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.cc-sidebar__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+}
+
+.cc-sidebar__user-name {
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cc-beige-00, #EAE4C8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cc-sidebar__user-email {
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 11px;
+  color: var(--sidebar-group-label, #757264);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

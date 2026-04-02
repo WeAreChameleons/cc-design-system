@@ -1,0 +1,63 @@
+.cc-fab-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.cc-fab {
+  position: relative;
+  width: var(--fab-size, 44px);
+  height: var(--fab-size, 44px);
+  border: none;
+  border-radius: var(--fab-radius, 10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  flex-shrink: 0;
+}
+
+.cc-fab:active {
+  transform: scale(0.95);
+}
+
+/* Phone FAB */
+.cc-fab--phone {
+  background: var(--fab-phone-bg, #365D60);
+}
+.cc-fab--phone:hover {
+  background: var(--fab-phone-hover, #2A474A);
+}
+
+/* Chat FAB */
+.cc-fab--chat {
+  background: var(--fab-chat-bg, #EB633F);
+}
+.cc-fab--chat:hover {
+  background: var(--fab-chat-hover, #D45939);
+}
+
+/* Badge */
+.cc-fab__badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--fab-badge-bg, #E8EB74);
+  color: var(--fab-badge-txt, #2E2F17);
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 2px solid #fff;
+}

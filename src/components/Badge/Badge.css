@@ -1,0 +1,71 @@
+.cc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--badge-font, 'IBM Plex Sans', sans-serif);
+  font-size: var(--badge-font-size, 13px);
+  font-weight: var(--badge-font-weight, 600);
+  border-radius: var(--radius-full, 9999px);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* ── Sizes ── */
+.cc-badge--sm { padding: 2px 8px; font-size: 11px; }
+.cc-badge--md { padding: 3px 10px; font-size: 13px; }
+.cc-badge--lg { padding: 4px 12px; font-size: 14px; }
+
+/* ── Dot ── */
+.cc-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* ── Status variants ── */
+.cc-badge--healthy   { background: #E8EB74; color: #2E2F17; }
+.cc-badge--error     { background: #FDECEA; color: #8B1A1A; }
+.cc-badge--syncing   { background: #EAE4C8; color: #8D3B26; }
+.cc-badge--warning   { background: #FFF3CD; color: #664D03; }
+.cc-badge--inactive  { background: #F0EFEE; color: #8C8978; }
+
+/* ── CRM stage variants ── */
+.cc-badge--lead        { background: #EAE4C8; color: #757264; }
+.cc-badge--prospect    { background: color-mix(in srgb, #E8EB74 40%, white); color: #2E2F17; }
+.cc-badge--proposal    { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--negotiating { background: color-mix(in srgb, #BC4F32 10%, white); color: #5E2819; }
+.cc-badge--closed      { background: #E8EB74; color: #2E2F17; }
+.cc-badge--lost        { background: #BBB6A0; color: #2F2E28; }
+
+/* ── Role / team variants ── */
+.cc-badge--core-team   { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--expert      { background: #EAE4C8; color: #757264; }
+.cc-badge--vendor      { background: #BBB6A0; color: #2F2E28; }
+.cc-badge--owner       { background: #2F2E28; color: #EAE4C8; }
+.cc-badge--strategy    { background: color-mix(in srgb, #5DEFF0 15%, white); color: #365D60; }
+.cc-badge--design      { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--engineering { background: color-mix(in srgb, #E8EB74 40%, white); color: #2E2F17; }
+.cc-badge--marketing   { background: color-mix(in srgb, #EB633F 15%, white); color: #5E2819; }
+.cc-badge--sales       { background: color-mix(in srgb, #7A8A2A 10%, white); color: #2E2F17; }
+.cc-badge--operations  { background: #EAE4C8; color: #8C8978; }
+.cc-badge--finance     { background: color-mix(in srgb, #5DEFF0 15%, white); color: #2A474A; }
+.cc-badge--hr          { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--legal       { background: #D3CDB4; color: #2F2E28; }
+
+/* ── Direction variants ── */
+.cc-badge--inbound   { background: color-mix(in srgb, #5DEFF0 20%, white); color: #365D60; }
+.cc-badge--outbound  { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--bi        { background: color-mix(in srgb, #E8EB74 40%, white); color: #2E2F17; }
+
+/* ── Auth type variants ── */
+.cc-badge--no-auth   { background: #F0EFEE; color: #8C8978; }
+.cc-badge--api-key   { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--oauth     { background: color-mix(in srgb, #5DEFF0 20%, white); color: #365D60; }
+
+/* ── Outreach variants ── */
+.cc-badge--email   { background: color-mix(in srgb, #EB633F 10%, white); color: #8D3B26; }
+.cc-badge--call    { background: color-mix(in srgb, #5DEFF0 20%, white); color: #365D60; }
+.cc-badge--meeting { background: color-mix(in srgb, #E8EB74 40%, white); color: #2E2F17; }
+.cc-badge--message { background: #EAE4C8; color: #757264; }

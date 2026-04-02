@@ -1,0 +1,62 @@
+.cc-filter-drop {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 10px;
+  border: 1.5px solid var(--filter-drop-border, #D3CDB4);
+  border-radius: var(--radius-md, 8px);
+  background: #fff;
+  transition: border-color 0.15s, background 0.15s;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.cc-filter-drop--active {
+  border-color: var(--filter-active-border, color-mix(in srgb, #EB633F 40%, transparent));
+  background: var(--filter-active-bg, color-mix(in srgb, #EB633F 5%, white));
+}
+
+.cc-filter-drop--active .cc-filter-drop__label {
+  color: var(--filter-active-txt, #8D3B26);
+}
+
+.cc-filter-drop--active .cc-filter-drop__arrow {
+  color: var(--cc-orange-00, #EB633F);
+}
+
+/* Native select sits on top (transparent, full coverage) for accessibility */
+.cc-filter-drop__select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.cc-filter-drop__label {
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cc-beige-60, #757264);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  pointer-events: none;
+}
+
+.cc-filter-drop__arrow {
+  color: var(--cc-beige-40, #8C8978);
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  pointer-events: none;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}

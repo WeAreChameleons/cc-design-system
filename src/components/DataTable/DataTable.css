@@ -1,0 +1,108 @@
+.cc-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius-lg, 12px);
+  border: 1px solid var(--table-header-border, #D3CDB4);
+}
+
+.cc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 13px;
+}
+
+/* ── Header ── */
+.cc-table__th {
+  background: var(--table-header-bg, #EAE4C8);
+  color: var(--table-header-text, #2F2E28);
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--table-header-border, #D3CDB4);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.cc-table__th:first-child { border-radius: var(--radius-lg, 12px) 0 0 0; }
+.cc-table__th:last-child  { border-radius: 0 var(--radius-lg, 12px) 0 0; }
+
+.cc-table__th--sortable { cursor: pointer; }
+.cc-table__th--sortable:hover { background: color-mix(in srgb, var(--cc-beige-00, #EAE4C8) 60%, var(--cc-beige-10, #D3CDB4)); }
+
+.cc-table__th--sorted .cc-table__sort-icon {
+  color: var(--table-sort-active, #EB633F);
+}
+
+.cc-table__th-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cc-table__sort-icon {
+  font-size: 11px;
+  color: var(--cc-beige-40, #8C8978);
+}
+
+/* ── Rows ── */
+.cc-table__row td {
+  border-bottom: 1px solid var(--table-header-border, #D3CDB4);
+}
+
+.cc-table__row:last-child td {
+  border-bottom: none;
+}
+
+.cc-table__row--alt {
+  background: var(--table-row-alt, color-mix(in srgb, #EAE4C8 40%, transparent));
+}
+
+.cc-table__row--clickable {
+  cursor: pointer;
+}
+.cc-table__row--clickable:hover {
+  background: color-mix(in srgb, var(--cc-orange-00, #EB633F) 4%, white);
+}
+
+.cc-table__td {
+  padding: 11px 14px;
+  color: var(--cc-dark, #282828);
+  vertical-align: middle;
+}
+
+/* ── Empty state ── */
+.cc-table__empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--cc-beige-40, #8C8978);
+  font-size: 13px;
+}
+
+/* ── Link cells (used via render prop) ── */
+.cc-table-link {
+  color: var(--table-link, #D45939);
+  text-decoration: none;
+  font-weight: 500;
+}
+.cc-table-link:hover { text-decoration: underline; }
+
+/* ── Action button (used via render prop) ── */
+.cc-table-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--table-action-bg, #EB633F);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.cc-table-action:hover { background: var(--cc-orange-10, #D45939); }

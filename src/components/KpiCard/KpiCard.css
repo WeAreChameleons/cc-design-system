@@ -1,0 +1,96 @@
+.cc-kpi {
+  background: var(--kpi-card-bg, #fff);
+  border: 1px solid var(--kpi-card-border, #D3CDB4);
+  border-radius: var(--radius-lg, 12px);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.cc-kpi__caps-label {
+  font-family: var(--cc-font-display, 'IBM Plex Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--kpi-label-color, #8C8978);
+}
+
+.cc-kpi__label {
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--kpi-label-color, #8C8978);
+  line-height: 1.4;
+}
+
+.cc-kpi__value-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cc-kpi__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.cc-kpi__dot--orange { background: var(--cc-orange-00, #EB633F); }
+.cc-kpi__dot--teal   { background: var(--cc-teal-60, #365D60); }
+.cc-kpi__dot--green  { background: var(--cc-green-40, #7A8A2A); }
+
+.cc-kpi__value {
+  font-family: var(--kpi-value-font, 'IBM Plex Sans', sans-serif);
+  font-size: var(--kpi-value-size, 28px);
+  font-weight: var(--kpi-value-weight, 500);
+  color: var(--kpi-value-neutral, #282828);
+  line-height: 1.1;
+}
+
+/* Value color variants */
+.cc-kpi__value--orange  { color: var(--kpi-value-orange, #EB633F); }
+.cc-kpi__value--teal    { color: var(--kpi-value-teal, #365D60); }
+.cc-kpi__value--green   { color: var(--kpi-value-green, #7A8A2A); }
+.cc-kpi__value--neutral { color: var(--kpi-value-neutral, #282828); }
+
+.cc-kpi__subtext {
+  font-family: var(--cc-font-body, 'Inter', sans-serif);
+  font-size: 12px;
+  color: var(--cc-beige-40, #8C8978);
+  margin-top: 2px;
+}
+
+/* ── Card variant overrides ── */
+.cc-kpi--alert {
+  background: var(--kpi-alert-bg, color-mix(in srgb, #EB633F 8%, white));
+  border-color: var(--kpi-alert-border, color-mix(in srgb, #EB633F 27%, transparent));
+}
+.cc-kpi--alert .cc-kpi__label,
+.cc-kpi--alert .cc-kpi__value {
+  color: var(--kpi-alert-txt, #D45939);
+}
+
+.cc-kpi--finance .cc-kpi__value {
+  font-size: 22px;
+}
+
+/* ── Tinted variants ── */
+.cc-kpi--tinted-orange {
+  background: color-mix(in srgb, #EB633F 8%, white);
+  border-color: color-mix(in srgb, #EB633F 20%, transparent);
+}
+.cc-kpi--tinted-teal {
+  background: color-mix(in srgb, #5DEFF0 12%, white);
+  border-color: color-mix(in srgb, #365D60 20%, transparent);
+}
+.cc-kpi--tinted-green {
+  background: color-mix(in srgb, #E8EB74 20%, white);
+  border-color: color-mix(in srgb, #7A8A2A 20%, transparent);
+}
+.cc-kpi--tinted-blue {
+  background: color-mix(in srgb, #5DEFF0 15%, white);
+  border-color: color-mix(in srgb, #365D60 20%, transparent);
+}
