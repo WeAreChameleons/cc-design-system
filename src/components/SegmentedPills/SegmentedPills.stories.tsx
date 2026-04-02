@@ -67,6 +67,7 @@ export const Interactive: Story = {
 }
 
 export const AllVariants: Story = {
+  name: 'All Variants',
   render: () => {
     const [active, setActive] = useState('all')
     const opts = [{ value: 'all', label: 'All' }, { value: 'active', label: 'Active' }, { value: 'done', label: 'Done' }]

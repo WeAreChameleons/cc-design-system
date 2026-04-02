@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ColorPalette } from '../../components/ColorPalette/ColorPalette'
 
 const meta: Meta<typeof ColorPalette> = {
-  title: 'Design Tokens/Colors',
+  title: 'Design Tokens/Color Palette',
   component: ColorPalette,
   parameters: {
     layout: 'padded',
@@ -13,6 +13,6 @@ const meta: Meta<typeof ColorPalette> = {
 export default meta
 type Story = StoryObj<typeof ColorPalette>
 
-export const FullPalette: Story = {
-  name: 'Full palette',
+export const Default: Story = {
+  name: 'Default',
 }

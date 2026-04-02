@@ -120,6 +120,6 @@ const meta: Meta<typeof TypographyScale> = {
 export default meta
 type Story = StoryObj<typeof TypographyScale>
 
-export const TypeScale: Story = {
-  name: 'Type scale',
+export const Default: Story = {
+  name: 'Default',
 }

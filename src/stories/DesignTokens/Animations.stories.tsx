@@ -109,6 +109,6 @@ const meta: Meta<typeof AnimationDoc> = {
 export default meta
 type Story = StoryObj<typeof AnimationDoc>
 
-export const TransitionsAndMotion: Story = {
-  name: 'Transitions & motion',
+export const Default: Story = {
+  name: 'Default',
 }

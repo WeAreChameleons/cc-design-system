@@ -68,6 +68,7 @@ export const Finance: Story = {
 }
 
 export const Dashboard: Story = {
+  name: 'All Variants',
   render: () => (
     <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
       <KpiCard label="Total contacts" value="2,847" variant="neutral" />

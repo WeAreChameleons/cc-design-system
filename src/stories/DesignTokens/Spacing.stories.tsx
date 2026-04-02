@@ -89,6 +89,6 @@ const meta: Meta<typeof SpacingScale> = {
 export default meta
 type Story = StoryObj<typeof SpacingScale>
 
-export const SpacingAndRadius: Story = {
-  name: 'Spacing & Radius',
+export const Default: Story = {
+  name: 'Default',
 }

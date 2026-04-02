@@ -20,14 +20,15 @@ type Story = StoryObj<typeof Badge>
 export const Default: Story = {}
 
 // ── Status ────────────────────────────────────────────────────────────────────
-export const StatusHealthy: Story = { args: { label: 'Healthy', variant: 'healthy', showDot: true } }
-export const StatusError: Story = { args: { label: 'Error', variant: 'error', showDot: true } }
-export const StatusSyncing: Story = { args: { label: 'Syncing', variant: 'syncing', showDot: true } }
-export const StatusWarning: Story = { args: { label: 'Warning', variant: 'warning', showDot: true } }
-export const StatusInactive: Story = { args: { label: 'Inactive', variant: 'inactive', showDot: true } }
+export const StatusHealthy: Story = { name: 'Status healthy', args: { label: 'Healthy', variant: 'healthy', showDot: true } }
+export const StatusError: Story = { name: 'Status error', args: { label: 'Error', variant: 'error', showDot: true } }
+export const StatusSyncing: Story = { name: 'Status syncing', args: { label: 'Syncing', variant: 'syncing', showDot: true } }
+export const StatusWarning: Story = { name: 'Status warning', args: { label: 'Warning', variant: 'warning', showDot: true } }
+export const StatusInactive: Story = { name: 'Status inactive', args: { label: 'Inactive', variant: 'inactive', showDot: true } }
 
 // ── CRM stage ─────────────────────────────────────────────────────────────────
 export const CRMStage: Story = {
+  name: 'CRM stage',
   render: () => (
     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
       <Badge label="Lead" variant="lead" />
@@ -42,6 +43,7 @@ export const CRMStage: Story = {
 
 // ── Role / team ───────────────────────────────────────────────────────────────
 export const RoleTeam: Story = {
+  name: 'Role / team',
   render: () => (
     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
       <Badge label="Core Team" variant="core-team" />
@@ -74,6 +76,7 @@ export const Direction: Story = {
 
 // ── Auth type ─────────────────────────────────────────────────────────────────
 export const AuthType: Story = {
+  name: 'Auth type',
   render: () => (
     <div style={{ display: 'flex', gap: 8 }}>
       <Badge label="No Auth" variant="no-auth" />
@@ -96,6 +99,7 @@ export const Sizes: Story = {
 
 // ── Composite ─────────────────────────────────────────────────────────────────
 export const InContext: Story = {
+  name: 'In context',
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
       <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
